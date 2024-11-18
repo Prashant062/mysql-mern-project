@@ -11,7 +11,7 @@ const App = () => {
 
   const fetchUsers = async () => {
     try {
-      const response = await axios.get('http://localhost:5000/api/users');
+      const response = await axios.get(`https://backend-of-mysql-project.onrender.com/api/users`);
       setUsers(response.data);
     } catch (error) {
       console.error('Error fetching users:', error);

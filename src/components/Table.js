@@ -10,10 +10,10 @@ const Table = ({ users, refreshData }) => {
 
   const handleDelete = async (id) => {
     try {
-      await axios.delete(`http://localhost:5000/api/users/${id}`);
-      setShowSuccessModal(true); // Show success modal on delete
+      await axios.delete(`https://backend-of-mysql-project.onrender.com/api/users/${id}`);
+      setShowSuccessModal(true);
       refreshData();
-      setTimeout(() => setShowSuccessModal(false), 5000); // Hide after 5 seconds
+      setTimeout(() => setShowSuccessModal(false), 5000);
     } catch (error) {
       console.error(error);
       alert('Error deleting user');

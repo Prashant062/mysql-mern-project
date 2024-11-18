@@ -21,7 +21,7 @@ const Form = ({ refreshData }) => {
 
   const handleSubmit = async () => {
     try {
-      await axios.post('http://localhost:5000/api/users', formData);
+      await axios.post(`https://backend-of-mysql-project.onrender.com/api/users`, formData);
       setShowSuccessModal(true); // Show success modal
       refreshData();
       setTimeout(() => setShowSuccessModal(false), 5000); // Hide after 5 seconds
