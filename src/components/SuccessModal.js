@@ -5,7 +5,7 @@ const SuccessModal = ({ message }) => {
   useEffect(() => {
     const timer = setTimeout(() => {
       document.getElementById('success-modal').style.display = 'none';
-    }, 5000);
+    }, 2000);
 
     return () => clearTimeout(timer);
   }, []);

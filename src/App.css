@@ -3,10 +3,10 @@ body {
   font-family: 'Arial', sans-serif;
   margin: 0;
   padding: 0;
-  background: linear-gradient(135deg, #FFDEE9, #B5FFFC, #C9FFBF, #FCE8C3);
+  background: linear-gradient(135deg, #caa6b2, #62b9b6, #C9FFBF, #e6e1d8);
   background-size: 200% 200%;
   animation: softGradient 6s ease infinite;
-  color: #2c3e50; /* Dark text for better readability */
+  color: #19242e;
   min-height: 100vh;
   display: flex;
   justify-content: center;
@@ -15,7 +15,7 @@ body {
 
 /* Navigation */
 nav {
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(113, 157, 182, 0.9);
   padding: 12px 30px;
   border-radius: 25px;
   margin-bottom: 20px;
@@ -23,6 +23,7 @@ nav {
   width: 100%;
   max-width: 1200px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  margin: 10px;
 }
 
 nav a {
@@ -57,6 +58,8 @@ form {
   margin: 30px auto;
   width: 100%;
   box-sizing: border-box;
+  position: relative;
+  left: 50px;
 }
 
 form h2 {
